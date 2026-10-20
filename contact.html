@@ -19,6 +19,7 @@
   <style>
   .hero{
     background-image: url("/assets/email.jpg");
+  
   }
 </style>
   
@@ -42,165 +43,67 @@
 
    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <!-- Supporting paragraph -->
 
-<section class="flex-demo">
+
+<form action="https://formspree.io/f/xjygaeab" method="POST" id="contact-form">
+
+  <p><label for="first-name">First Name</label><input type="text" id="first-name" name="first-name" title="Add your first name" required></p>
+
+  <p><label for="last-name">Last Name</label><input type="text" id="last-name" name="last-name"></p>
+
+  <p><label for="phone">Phone</label><input type="tel" id="phone" name="phone" minlength="10" maxlength="15"></p>
+
+  <p><label for="email">Email</label><input type="email" id="email" name="email" required></p>
+
+  <p><label for="message">Message</label><textarea id="message" name="message" rows="6" cols="40"></textarea></p>
+
+  <fieldset>
+    <legend>Best time to reach me</legend>
+    <select id="best_time" name="best_time">
+      <option value="morning">Morning</option>
+      <option value="afternoon">Arternoon</option>
+      <option value="evening">Evening</option>
+      <option value="night">Night</option>
+    </select>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Best way to reach me</legend>
+    
+    <p><input type="checkbox" id="email_contact" name="email_contact">
+    <label for="email_contact">Email</label></p>
+
+    <p><input type="checkbox" id="phone_contact" name="phone_contact">
+    <label for="phone_contact">Phone Call</label></p>
+
+    <p><input type="checkbox" id="text_contact" name="text_contact">
+    <label for="text_contact">Text Message</label></p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Rate the website</legend>
+
+    <p><input type="radio" id="1 star" name="rating">
+    <label for="1 star">1 Star</label></p>
   
-  <div class="card">
-    <img src="/assets/training.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
+    <p><input type="radio" id="2 stars" name="rating">
+    <label for="2 stars">2 Stars</label></p>
 
-  <div class="card">
-    <img src="/assets/rest.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
+    <p><input type="radio" id="3 stars" name="rating">
+    <label for="3 stars">3 Stars</label></p>
 
-  <div class="card">
-    <img src="/assets/discipline.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
-  
-  <div class="card">
-    <img src="/assets/nutrition.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
+    <p><input type="radio" id="4 stars" name="rating">
+    <label for="4 stars">4 Stars</label></p>
 
-  <!-- copy the card div 3 to 5 more times -->
+    <p><input type="radio" id="5 stars" name="rating">
+    <label for="5 stars">5 Stars</label></p>
 
-</section>
+  </fieldset>
 
-<section class="grid-demo">
-
-  <div class="card">
-    <img src="/assets/training.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
-
-  <div class="card">
-    <img src="/assets/rest.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
-
-  <div class="card">
-    <img src="/assets/discipline.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
-  
-  <div class="card">
-    <img src="/assets/nutrition.jpg" alt="Describe the photo">
-    <h4>Card title</h4>
-    <p>A sentence or two about this item.</p>
-    <button>Learn more</button>
-  </div>
-
-</section>
-
-   <h2>Contact Me</h2> <!-- Major content section -->
-
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-   <h3>Heading Level 3 (Subsection)</h3> <!-- Subsection -->
-
-
-
-   <h4>Heading Level 4</h4> <!-- Deeper subdivision -->
-
-
-
-   <h5>Heading Level 5</h5> <!-- Minor heading -->
-
-
-
-   <h6>Heading Level 6</h6> <!-- Smallest heading -->
-
-
-
-   <h2>Unordered List Example</h2>
-
-
-
-   <ul>
-
-    <li>Lorem ipsum dolor sit amet</li>
-
-    <li>Consectetur adipiscing elit</li>
-
-    <li>Sed do eiusmod tempor</li>
-
-    <li>Incididunt ut labore et dolore</li>
-
-   </ul>
-
-
-
-   <h2>Ordered List Example</h2>
-
-
-
-   <ol>
-
-    <li>Ut enim ad minim veniam</li>
-
-    <li>Quis nostrud exercitation</li>
-
-    <li>Ullamco laboris nisi</li>
-
-    <li>Ut aliquip ex ea commodo</li>
-
-   </ol>
-
-
-
- <h2>Top five</h2>
-
-
-
-   <ul class="top-five">
-
-    <li><a href="https://www.youtube.com">Youtube</a></li>
-
-    <li><a href="https://www.amazong.com">Amazon</a></li>
-
-    <li><a href="https://www.facebook.com">Facebook</a></li>
-
-    <li><a href="https://www.instagram.com">Instagram</a></li>
-
-    <li><a href="https://www.tiktok.com">Tiktok</a></li>
-
-   </ul>
-
-
-<h2>Top five</h2>
-
-
-
-   <ul class="top-five2">
-
-    <li><a href="https://www.youtube.com">Youtube</a></li>
-
-    <li><a href="https://www.amazong.com">Amazon</a></li>
-
-    <li><a href="https://www.facebook.com">Facebook</a></li>
-
-    <li><a href="https://www.instagram.com">Instagram</a></li>
-
-    <li><a href="https://www.tiktok.com">Tiktok</a></li>
-
-   </ul>
-
+<p><button type="submit">Send Message</button></p>
+    
+</form>
 
   </main>
 

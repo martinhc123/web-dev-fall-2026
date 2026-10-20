@@ -5,7 +5,7 @@ ul, li, h1, h2, p, div {
 }
 
 * {
-    border: 0px solid red;
+    border: px solid red;
    } 
 
 body {
@@ -226,3 +226,67 @@ body {
 .top-five2 a {
     text-decoration: none;
     }
+
+    
+form {
+  max-width:500px;
+  min-width:300px;
+  margin: auto;
+  border: 5px solid rgb(195, 181, 181);
+  background-color: rgb(250, 222, 185);
+  padding: 25px 0px 25px 25px;
+}
+ 
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  padding-bottom:5px;
+}
+ 
+input {
+  width: 40%;
+  height: 20px;
+  font-size:20px;
+}
+ 
+textarea {
+  width: 90%;
+}
+ 
+.phone {
+  width: 100px;
+}
+ 
+button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 10px;
+  width: 30%;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
+}
+ 
+button:hover {
+  background-color: #b50067;
+  border-radius: 20px;
+   }    
+
+input:valid {background-color: #f7f7f7;}
+input:invalid{background-color: rgb(202, 233, 233);}
+
+input:hover,textarea:hover {background-color:#59c9fd}
+input:focus,textarea:focus {background-color:#ffffff}
+
+fieldset {
+  margin-top: 10px;
+  color: blue;
+  }
+
+ fieldset label {
+  display: inline;
+  }
