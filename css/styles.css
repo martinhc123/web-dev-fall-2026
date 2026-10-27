@@ -290,3 +290,172 @@ fieldset {
  fieldset label {
   display: inline;
   }
+
+  .container{
+
+                position: relative;
+
+      }
+
+@media (max-width: 768px) {
+
+       .hamburger {
+
+        display: flex;
+
+        position: absolute;
+
+        top: 20px;
+
+       right: 20px;
+
+       margin-right: 0;
+
+  }
+
+}
+
+/* ============================================
+   HAMBURGER BUTTON
+   ============================================ */
+ 
+ 
+/* Hide the checkbox itself */
+.hamburger input {
+    display: none;
+}
+ 
+ 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+ 
+ 
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+ 
+ 
+/* --- X state: when checkbox is checked --- */
+ 
+ 
+
+ 
+ 
+/* ============================================
+   MEDIA QUERY — MOBILE (max-width: 768px)
+   ============================================ */
+ 
+#nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+ 
+ 
+    .hamburger {
+        display: flex;
+    }
+ 
+ 
+    nav {
+        display: none;
+    }
+ 
+ 
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+
+
+/* Hide the toggle checkbox for nav menu */
+
+/* Animate hamburger lines when menu is open */
+#nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+#nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+
+/* Hide nav by default on mobile */
+nav {
+    display: none;
+}
+
+/* Show nav when checkbox is checked */
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+
+/* Manage mobile menu appearance */
+nav {
+    flex-basis: 100%;
+    width: 40%;
+    max-width: 90%;
+    background-color: rgba(48, 88, 219, 0.8);
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 118%;
+    right: 15px;
+}
+
+/* Stack nav links vertically */
+ul.navlist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0%;
+    margin-top: 10px;
+    padding: 0;
+}
+
+/* Manage links appearance */
+ul.navlist li a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 9px 14px;
+}
+
+ul.navlist li {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header {
+    background-color: transparent;
+}
+
+.grid-demo {
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 15px;
+  }
+
+body {
+  padding-top: 140px;
+  } 
+  
+  }
